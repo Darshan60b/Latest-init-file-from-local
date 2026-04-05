@@ -8,6 +8,7 @@ describe("hendel",()=>{
  cy.get('.example>a').invoke('removeAttr','target').click();
  cy.url().should('include',"https://the-internet.herokuapp.com/windows/new")
  cy.go('back');
+ cy.wait(5000);
 
 
 
